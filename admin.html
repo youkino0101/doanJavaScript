@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header1 {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .form-input, .list-data {
+            width: 520px;
+            border: 1px solid #ccc;
+            margin: 25px 20px;
+            padding: 10px;
+            float: left;
+        }
+
+        .list-data {
+            width: 650px;
+        }
+
+        .form-input label {
+            margin-top: 5px;
+            width: 130px;
+            font-size: 17px;
+            float: left;
+        }
+
+        .form-input input[type="text"], .form-input input[type="password"] , button {
+            margin-bottom: 10px;
+            width: 200px;
+            padding: 5px;
+        }   
+        button {
+            margin-top: 15px;
+            margin-left: 130px;
+        }  
+
+        #name-error, #email-error, #pass-error, #pass-repeat-error {
+            color: red;
+        }
+    </style>
+</head>
+<body onload="list_info()">
+    <h1 class="header1">TRANG ADMIN!!!</h1>
+
+    <div class="list-data" id="list-data">
+        <table id="grid-list" width="600" border="1" cellpadding="0">
+            
+        </table>
+    </div>
+
+    <div class="form-input">
+        <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Thông tin cần chỉnh sửa</h2>
+            <img src="asset/img/close.png" alt="" style="max-width: 32px;">
+        </div>
+        <label for="">Tên đăng nhập</label>
+        <input type="text" id="username" class="user">
+        <br>
+        <span id="name-error"></span>
+        <br>
+        <label for="">Email</label>
+        <input type="text" id="email" class="email">
+        <br>
+        <span id="email-error"></span>
+        <br>
+        <label for="">Mật khẩu mới</label>
+        <input type="password" id="password" class="pass">
+        <br>
+        <span id="pass-error"></span>
+        <br>
+        <label for="">Nhập lại mật khẩu mới</label>
+        <input type="password" id="password-repeat">
+        <br>
+        <span id="pass-repeat-error"></span>
+        <br>
+        <br>
+        <button onclick="add()"> Cập nhật lại</button>
+    </div>
+    <script src="asset/js/formAndAdmin.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+
+</body>
+</html>

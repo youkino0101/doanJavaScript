@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LapLap-New</title>
+</head>
+<body>
+<!-- scrollspy -->
+      <header>
+        <div class="container py-1">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <span class="date text-white">Thứ 7, Ngày 5 Tháng 6, 2021</span>
+            <div class="">
+              <a href="form.html" type="button" class="btn btn-outline-warning">ĐĂNG NHẬP / ĐĂNG KÍ</a>
+            </div>
+          </div>
+        </div>
+        <div class="fixed-sticky">
+          <nav class="navbar navbar-expand-md navbar-mute bg-mute" id="nav">
+            <div class="container">
+              <a href="index.html" class="navbar-brand" id="nav-brand">
+                <img src="asset/img/big-logo.PNG" alt="" width="150">
+              </a>
+              <!-- mobile -->
+              <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- end mobile -->
+              <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav m-auto mb-2 mb-md-0 fw-bold">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link px-3 fs-5">TRANG CHỦ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="tab1.html" class="nav-link px-3 fs-5">GAME ONLINE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link px-3 fs-5">GAME OFFLINE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link px-3 fs-5">GAME MOBILE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="esports.html" class="nav-link px-2 fs-5">ESPORTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="tab2.html" class="nav-link px-3 fs-5">ĐỒ CÔNG NGHỆ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link px-2 fs-5">CỘNG ĐỒNG</a>
+                  </li>
+                </ul>
+              </div> 
+              <!-- MOBILE -->
+              <div class="offcanvas  bg-offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset text-white fs-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group list-group-flush fs-1 ">
+                    <a href="index.html" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>TRANG CHỦ</h2>
+                    </a>
+                    <a href="tab1.html" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>GAME ONLINE</h2>
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>GAME OFFLINE</h2>
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>GAME MOBILE</h2>
+                    </a>
+                    <a href="esports.html" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>ESPORTS</h2>
+                    </a>
+                    <a href="tab2.html" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>ĐỒ CÔNG NGHỆ</h2>
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action bg-trans text-white">
+                      <h2>CỘNG ĐỒNG</h2>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+              <!-- END MOBILE -->
+            </div>
+          </nav>
+        </div>
+        
+      </header>
+      <main class="py-5">
+        <div class="container mb-4">
+          <div class="trending-news border border-white py-3 mb-5">
+            <div class="row">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <a href="#">
+                      <p class="text-center">Game DAYSGONE chính thức ra mắt trên bản PC</p>
+                    </a>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <a href="#">
+                      <p class="text-center">Game thủ Hà Thành hội tụ tại giải Tekken quy mô nhất 2021</p>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#">
+                      <p class="text-center">Sắp ra mắt con PS6?</p>
+                    </a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon border border-white" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon border border-white" aria-hidden="true"></span>
+                  <span class="visually-hidden ">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="group-news mb-5">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="item">
+                  <a class="link-none" href="xePC.html">
+                    <img class="ms-4" src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/case-xe-1-534x462.jpg" alt="">
+                    <div class="content" style="margin-left: 20px;">
+                      <h3 class="me-5 pe-5">Trầm trồ trước “dân chơi” độ dàn siêu xe...</h3>
+                      <div class="content-date">
+                        <span class="date me-5">24 Tháng Tư, 2021</span>
+                        <span class="comment">
+                          <i class="far fa-comments fs-5"></i> 12
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row gx-0">
+                  <div class="col-md-12 mb-2">
+                    <div class="item">
+                      <a class="link-none" href="">
+                        <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/Game8-Avengers-Infinity-War-pc-case-1-533x261.jpg" alt="" width="545">
+                        <div class="content" style="width: 98%"> 
+                          <h3 class="">Ngắm những bộ case độ lấy chủ đề Avengers đẹp nhất từng xuất hiện</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="item">
+                      <a class="link-none" href="">
+                        <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/Game8-rog-1-265x198.jpg" alt="">
+                        <div class="content" >
+                          <h5 class="">ASUS Republic of Gamers giới thiệu dải sản phẩm...</h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="item">
+                      <a class="link-none" href="">
+                        <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/Game8-water-cooling-7-265x198.jpg" alt="">
+                        <div class="content" style="width: 95%">
+                          <h5 class="">Những kiến thức cơ bản bạn nên biết trước...</h5>                         
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news">
+            <div class="row g-5">
+              <div class="col-md-8">
+                <div class="hot-news">
+                  <div class="title d-flex align-items-center mb-3">
+                    <span class="news-title p-2">TIN NÓNG</span>
+                    <div class="divider-title"></div>
+                  </div>
+                  <div class="row g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-auto d-none d-lg-block">
+                      <a href="">
+                      <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/pubg-update-324x235.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="col p-4 border rounded d-flex flex-column position-static">
+                      <a class="link-none" href="">
+                        <h3 class="mb-4">PUBG tiếp tục có cập nhật cực hot trên hai nền tảng PS4 và...</h3>
+                      </a>
+                      <div class="mb-4  text-muted d-flex justify-content-between">
+                        <span class="date">31 Tháng Năm, 2021</span>
+                        <span class="view">31,412 Lượt xem</span>
+                        <span class="comments rounded-top text-white">25</span>
+                      </div>
+                      <p class="card-text mb-auto">Ngày 9/4, hai chiếc xe độc ​​quyền mới của map Vikendi đã có mặt trên Xbox One, cũng như một vũ khí mới, khẩu súng ngắn quyền lực Flare Gun. PUBG vừa có cập nhật...</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gx-0 gy-3 px-0">
+                      <div class="col pe-1">
+                        <div class="card shadow-sm bg-trans"> 
+                          <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/shroud-rage-quits-pubg-thumb.jpg" alt="">
+                          <div class="card-body border-start border-end border-bottom">
+                            <div class="mb-4 text-white">
+                              <a href="esports.html" class="link-none" class="stretched-link">
+                                <small class="theme category">ESPORTS</small>
+                              </a>
+                            </div>
+                            <div class="mb-4 text-white">
+                              <a href="" class="link-none">
+                                <p class="text">Shroud vô cùng tức giận khi quay lại chơi PUBG</p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col px-1">
+                        <div class="card shadow-sm bg-trans">
+                          <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/2404-dao-kiem-vo-song-mobile-2019-1-696x364.jpg" width="234" height="116" alt="">
+                          <div class="card-body border-start border-end border-bottom">
+                            <div class="mb-4 text-white">
+                              <a href="tab1.html" class="link-none" class="stretched-link">
+                                <small class="theme category">GAME MOBILE</small>
+                              </a>
+                            </div>
+                            <div class="mb-4 text-white">
+                              <a href="" class="link-none">
+                                <p class="text">Đao Kiếm Vô Song Mobile thống trị các bảng xếp hạng game...</p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col ps-1">
+                        <div class="card shadow-sm bg-trans">
+                          <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/Game8-Cinematic-Trailer-hay-nhat-Blizzard-5-Copy.jpg" width="239" height="116" alt="">
+                          <div class="card-body border-start border-end border-bottom">
+                            <div class="mb-4 text-white">
+                              <a href="tab1.html" class="link-none" class="stretched-link">
+                                <small class="theme category">GAME ONLINE</small>
+                              </a>
+                            </div>
+                            <div class="mb-4 text-white">
+                              <a href="" class="link-none">
+                                <p class="text">Điểm mặt 5 Cinematic Trailer được cho là hay nhất do Blizzard </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="new-news">
+                  <div class="title d-flex align-items-center mb-3">
+                    <span class="news-title p-2">TIN MỚI</span>
+                    <div class="divider-title"></div>
+                  </div>
+                  <div class="big-item mb-5">
+                    <a class="link-none" href="">
+                      <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/Game8-rog-1.jpg" alt="" width="100%">
+                      <div class="shadow"></div>
+                      <div class="content ">
+                        <h3 class="">ASUS Republic of Gamers giới thiệu dải sản phẩm laptop gaming sử dụng card đồ họa GeForce RTX™ tại sự kiện Unleashed the Beasts</h3>
+                        <br>
+                        <div class="content-date">
+                          <span class="date me-5">24 Tháng Năm, 2021</span>
+                          <span class="comment">
+                            <i class="far fa-comments fs-5"></i> 12
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="list-item">
+                    <div class="row g-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col-auto d-none d-lg-block">
+                        <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/Game8-streamer-nu-lay-loi-218x150.jpg" alt="">
+                      </div>
+                      <div class="col p-2 ps-5 d-flex flex-column position-static">
+                        <a class="link-none" href="streamer.html">
+                          <h3 class="">Điểm mặt top 2 nữ streamer có độ lầy vô đối trong làng game...</h3>
+                        </a>
+                        <div class="text-muted d-flex justify-content-between">
+                          <span class="date">31 Tháng Năm, 2021</span>
+                          <span class="view">31,412 Lượt xem</span>
+                          <span class="comments rounded-top text-white">25</span>
+                        </div>
+                        <p class="card-text mb-auto">Ohsusu Ohsusu là một trong số ít những nữ streamer không bị nhiều người chê là “làm màu”. Cô có tên thật là Quý Ngô, fan đặt biệt danh cho cô là chị Bắp...</p>
+                      </div>
+                    </div>
+                    <div class="row g-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col-auto d-none d-lg-block">
+                        <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/fortnite-world-cup-218x150.jpg" alt="">
+                      </div>
+                      <div class="col p-2 ps-5 d-flex flex-column position-static">
+                        <a class="link-none" href="">
+                          <h3 class="">Thật không thể tin được khi hơn 1,200 tài khoản hack bị ban tại...</h3>
+                        </a>
+                        <div class="text-muted d-flex justify-content-between">
+                          <span class="date">24 Tháng Tư, 2021</span>
+                          <span class="view">120,412 Lượt xem</span>
+                          <span class="comments rounded-top text-white">365</span>
+                        </div>
+                        <p class="card-text mb-auto">Epic Games đã ban hơn 1,200 tài khoản Fortnite và hủy tiền thưởng của hơn 200 người chơi sau khi bị điều tra hack trong tuần đầu tiên của Fortnite World Cup, vòng Online...</p>
+                      </div>
+                    </div>
+                    <div class="row g-0  overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col-auto d-none d-lg-block">
+                        <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/pubg-pc-8-218x150.jpg" alt="">
+                      </div>
+                      <div class="col p-2 ps-5 d-flex flex-column position-static">
+                        <a class="link-none" href="">
+                          <h3 class="">Chi tiết bản update #28 của PUBG PC với vô số những sự thay...</h3>
+                        </a>
+                        <div class="text-muted d-flex justify-content-between">
+                          <span class="date">18 Tháng Hai, 2021</span>
+                          <span class="view">360,412 Lượt xem</span>
+                          <span class="comments rounded-top text-white">11,895</span>
+                        </div>
+                        <p class="card-text mb-auto">Bản cập nhật mới nhất của PUBG (Update PUBG #28)giới thiệu tính năng hoàn toàn mới THÔNG THẠO VŨ KHÍ! Weapon Mastery (Thông thạo vũ khí) là một hệ thống tăng cấp mới cho...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                  <div class="title-4 mb-4">
+                    <h4 class="menu-title pt-2 mb-4">
+                      <span class="fs-5 title fw-bold">MẠNG XÃ HỘI</span>
+                      <div class="divider-title-4">
+                        <div class="divider-title-2"></div>
+                      </div>
+                    </h4>
+                    <div class="social-list">
+                      <div class="box box-facebook d-flex justify-content-between align-items-center p-2">
+                        <div class="box-box">
+                          <span><i class="fab fa-facebook-f box-facebook"></i></span>
+                          <span>3 Triệu</span>
+                          <span>Thành viên</span>
+                        </div>
+                        <span>THÍCH</span>
+                      </div>
+                      <div class="box box-youtube d-flex justify-content-between align-items-center p-2">
+                        <div class="box-box">
+                          <span><i class="fab fa-youtube"></i></span>
+                          <span>4,9 Triệu</span>
+                          <span>Người đăng kí</span>
+                        </div>
+                        <span>ĐĂNG KÍ</span>
+                      </div>
+                      <div class="box box-twitter d-flex justify-content-between align-items-center p-2">
+                        <div class="box-box">
+                          <span><i class="fab fa-twitter"></i></span>
+                          <span>1 Triệu</span>
+                          <span>Người theo dõi</span>
+                        </div>
+                        <span>THEO DÕI</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="4-first">
+                    <div class="title-4 mb-4">
+                      <h4 class="menu-title pt-2">
+                        <span class="fs-4 title">CHUYÊN MỤC</span>
+                        <div class="divider-title-4"></div>
+                      </h4>
+                    </div>
+                    <ol class="list-unstyled">
+                      <li>
+                        <a class="link-none" href="tab1.html">
+                          <span class="list-name">GAME ONLINE</span>
+                          <span class="list-number">10</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="link-none" href="#">
+                          <span class="list-name">GAME OFFLINE</span>
+                          <span class="list-number">20</span>
+                        </a>
+                      </li><li>
+                        <a class="link-none" href="#">
+                          <span class="list-name">GAME MOBILE</span>
+                          <span class="list-number">3</span>
+                        </a>
+                      </li><li>
+                        <a class="link-none" href="esports.html">
+                          <span class="list-name">ESPORTS</span>
+                          <span class="list-number">5</span>
+                        </a>
+                      </li><li>
+                        <a class="link-none" href="tab2.html">
+                          <span class="list-name">ĐỒ CÔNG NGHỆ</span>
+                          <span class="list-number">20</span>
+                        </a>
+                      </li>
+                    </ol> 
+                  </div>
+                  <div class="4-second">
+                    <h4 class="menu-title pt-2">
+                      <span class="fs-4 title">GẦN ĐÂY</span>
+                      <div class="divider-title-4"></div>
+                    </h4>
+                    <ol class="list-unstyled">
+                      <li class="py-3 list-second">
+                        <a class="link-item" href="#">
+                          Cả LCK chỉ có duy nhất kkOma vẫn tin vào khả năng vô địch LCK Mùa Hè 2021 của T1
+                        </a>
+                      </li>
+                      <li class="py-3 list-second">
+                        <a class="link-item" href="#">
+                          Hợp tác hãng xe McLaren, PUBG Mobile tung event hấp dẫn, siêu tốc bậc nhất làng game tháng 6
+                        </a>
+                      </li>
+                      <li class="py-3 list-second">
+                        <a class="link-item" href="#">
+                          Riot quyết không bỏ luật giới hạn ngoại binh, Bắc Mỹ vỡ mộng thoát kiếp "lót đường" tại đấu trường quốc tế
+                        </a>
+                      </li>
+                      <li class="py-3 list-second">
+                        <a class="link-item" href="#">
+                          E-DRA lần đầu ra mắt màn hình gaming xịn sò, cả Nam - Bắc có 15 game thủ may mắn
+                        </a>
+                      </li>
+                      <li class="py-3 list-second">
+                        <a class="link-item" href="#">
+                          Dành riêng cho game thủ iOS tựa game phiêu lưu hành động thú vị - Witcheye
+                        </a>
+                      </li>
+                      <li class="py-3 list-second">
+                        <a class="link-item" href="#">
+                          Kỹ sư trưởng của Riot "khơi mào" cuộc khẩu chiến: Đấu Trường Chân Lý là game nhân phẩm hay kỹ năng?
+                        </a>
+                      </li>
+                    </ol> 
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-mute position-relative">
+          <div class="container pt-1 pb-5">
+            <div class="insert-title">
+              <h4 class="text">
+                <div class="subtitle">GAME MOBILE</div>
+                <span>NỔI BẬT</span>
+              </h4>
+            </div>
+            <div class="row row-cols-1 row-cols-md-5 mt-10">
+              <div class="col">
+                <div class="card bg-trans">
+                  <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/6/3/-1622698845132404450369.jpg" class="card-img-top" alt="...">
+                  <div class="card-body p-0 pt-2">
+                    <a href="" class="link-none category">GAME MOBILE</a>
+                    <a href="" class="link-none">
+                     <p class="card-text">Bất ngờ xuất hiện Team “giải lao” gây “sốt” AWC 2021: Mỗi thành viên đều từng làm điều</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-trans">
+                  <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/6/3/photo-1-1622696556816769935193.jpg" class="card-img-top" >
+                  <div class="card-body p-0 pt-2">
+                    <a href="" class="link-none category">GAME MOBILE</a>
+                    <a href="" class="link-none">
+                      <p class="card-text">HOT: FL thay đổi lớn về đội hình chính thức tại AWC 2021, nhân tố mới từng bón...</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-trans">
+                  <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/6/3/untitled-2-1622721794848672643049.jpg" class="card-img-top" >
+                  <div class="card-body p-0 pt-2">
+                    <a href="" class="link-none category">ESPORTS</a>
+                    <a href="" class="link-none">
+                      <p class="card-text">Những thú chơi ngốn tiền “bạc tỷ” của các streamer, fan xem chỉ biết xuýt xoa</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-trans">
+                  <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/6/3/-1622690602648108621783.jpg" class="card-img-top" >
+                  <div class="card-body p-0 pt-2">
+                    <a href="" class="link-none category">GAME MOBILE</a>
+                    <a href="" class="link-none">
+                      <p class="card-text">Sau bao ngày chờ đợi, fan hâm mộ của Học Viện Chiến Binh cũng đã có tựa...</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-trans">
+                  <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/6/4/fwefwef-16227994301401880272083.jpg" class="card-img-top" >
+                  <div class="card-body p-0 pt-2">
+                    <a href="tab1.html" class="link-none category">GAME ONLINE</a>
+                    <a href="" class="link-none">
+                      <p class="card-text">Valorant liên tục "đạt đỉnh", Riot hé lộ ra mắt phiên bản Mobile khiến game thủ...</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container">
+          <div class="all">
+            <div class="row g-5">
+              <div class="col-md-8">
+                <div class="ramdom">
+                  <div class="title d-flex align-items-center mb-3">
+                    <span class="news-title p-2">TỔNG HỢP</span>
+                    <div class="divider-title"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+
+                    </div>
+                    <div class="col-6"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </main>
+      <footer class="bg-mute py-5">
+        <div class="container mt-5">
+          <div class="row g-0">
+            <div class="col-md-3">
+              <div class="logo">
+                <a href="">
+                  <img class="img-fluid" src="asset/img/big-logo.PNG" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-5 ps-5">
+              <h2 class="text-white">VỚI CHÚNG TÔI</h2>
+              <br>
+              <p class="text-white">
+                LapLap-News là website tin tức có tuổi đời vài ngày kinh nghiệm trong ngành. 
+                LapLap-News luôn cập nhật tin tức một cách nhanh chóng kịp thời đáp ứng nhu 
+                cầu tìm hiểu thị trường game và công nghệ. Hãy đến với chúng tôi, LapLap-News
+                cho các bạn thấy sự khác biệt, hiệu quả của chúng tôi với thị trường website 
+                tin tức khác
+                <br>
+                <br>
+                Email liên hệ: quannguyennak@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4 text-white ps-5">
+              <h2 class="text-white">MẠNG XÃ HỘI</h2>
+              <br>
+              <div class="group-item-icon">
+                <a href="" class="btn btn-outline-warning rounded me-2">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="" class="btn btn-outline-warning rounded me-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="btn btn-outline-warning rounded me-2">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="" class="btn btn-outline-warning rounded">
+                  <i class="far fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="end-footer">
+        <div class="container py-2">
+          <p class="text-white pt-2">Designed by <a href="https://www.facebook.com/shini0101/">Nguyen Thanh Quan</a> with the help of the teacher</p>
+        </div>
+      </div>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

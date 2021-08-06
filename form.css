@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FDD017;
+    transition: 0.5s;
+}
+
+body.active {
+    background-color: #0d6efd;
+}
+
+/* container */ 
+.mid {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+.bg-blue {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+}
+
+.bg-blue .box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-blue .box h2 {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.bg-blue .box button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.formBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    /* background-image: url("../img/logo.png");
+    background-position: center; */
+}
+
+.formBox.active {
+    left: 50%;
+}
+
+.formBox .form {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.formBox .signinForm {
+    transition-delay: 0.25s;
+}
+
+.formBox.active .signinForm {
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.formBox .signupForm {
+    left: 100%;
+    transition-delay: 0s;
+}
+
+.formBox.active .signupForm {
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.formBox .form form {
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.formBox .form form h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.formBox .form form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+    background: #ffffffbf;
+}
+
+.formBox .form form button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+}
+
+.formBox .form form button[type="button"] {
+    background: #FDD017;
+    border: none;
+    margin-top: 10px;
+    color: #fff;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.formBox.active .signupForm button[type="button"] {
+    background-color: #0d6efd;
+}
+
+.formBox .form form .forgot {
+    color: #333;
+}
+
+#name-error, #email-error, #pass-error, #pass-repeat-error {
+    color: red;
+} 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+    <title>LapLap-New</title>
+</head>
+<body>
+    <div class="mid text-center">
+        <div class="bg-blue">
+            <div class="box signin">
+                <h2>Bạn Đã Có Tài Khoản ?</h2>
+                <button class="signinBtn" onclick="animation_remove()">Đăng Nhập</button>
+            </div>
+            <div class="box signup">
+                <h2>Tạo Tài Khoản Mới?</h2>
+                <button class="signupBtn" onclick="animation_start()">Đăng Kí</button>
+            </div>
+        </div>
+        <div class="formBox">
+            <div class="form signinForm">
+                <form>
+                    <h3>Đăng Nhập</h3>
+                    <input type="text" placeholder="Tên Đăng Nhập" id="user">
+                    <input type="password" placeholder="Mật Khẩu" id="pass">
+                    <button type="button" onclick="login()">Đăng Nhập</button>
+                    <br>
+                    <a href="" class="forgot">Quên Mật Khẩu</a>
+                </form>
+            </div>
+
+            <div class="form signupForm">
+                <form>
+                    <h3>Đăng Ký</h3>
+                    <input type="text" placeholder="Tên Đăng Nhập" id="username">
+                    <span id="name-error"></span>
+                    <input type="text" placeholder="Email" id="email">
+                    <span id="email-error"></span>
+                    <input type="password" placeholder="Mật Khẩu" id="password">
+                    <span id="pass-error"></span>
+                    <input type="password" placeholder="Nhập Lại Mật Khẩu" id="password-repeat">
+                    <span id="pass-repeat-error"></span>
+                    <p>Đồng ý với điều khoản của chúng tôi <a href="">Terms &amp; Privacy</a>.</p>   
+                    <button type="button" onclick="add()">Đăng Kí</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="asset/js/formAndAdmin.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

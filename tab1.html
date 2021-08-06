@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/font/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Game Online</title>
+</head>
+<body>
+    <header>
+        <div class="container py-1">
+          <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <span class="date text-white">Thứ 7, Ngày 5 Tháng 6, 2021</span>
+            <div class="text-end">
+              <a href="form.html" type="button" class="btn btn-outline-warning">ĐĂNG NHẬP / ĐĂNG KÍ</a>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-mute bg-mute visible" id="nav">
+          <div class="container">
+            <a href="index.html" class="navbar-brand" id="nav-brand">
+              <img src="asset/img/big-logo.PNG" alt="" width="150">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+            <!-- mobile -->
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end mobile -->
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+              <ul class="navbar-nav m-auto mb-2 mb-md-0 fw-bold">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link px-3 fs-5">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="tab1.html" class="nav-link px-3 fs-5 nav-link-active">GAME ONLINE</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link px-3 fs-5">GAME OFFLINE</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link px-3 fs-5">GAME MOBILE</a>
+                </li>
+                <li class="nav-item">
+                  <a href="esports.html" class="nav-link px-2 fs-5">ESPORTS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="tab2.html" class="nav-link px-3 fs-5">ĐỒ CÔNG NGHỆ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link px-2 fs-5">CỘNG ĐỒNG</a>
+                </li>
+              </ul>
+            </div> 
+            <!-- MOBILE -->
+            <div class="offcanvas  bg-offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset text-white fs-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="list-group list-group-flush fs-1 ">
+                  <a href="index.html" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>TRANG CHỦ</h2>
+                  </a>
+                  <a href="tab1.html" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>GAME ONLINE</h2>
+                  </a>
+                  <a href="" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>GAME OFFLINE</h2>
+                  </a>
+                  <a href="" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>GAME MOBILE</h2>
+                  </a>
+                  <a href="esports.html" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>ESPORTS</h2>
+                  </a>
+                  <a href="tab2.html" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>ĐỒ CÔNG NGHỆ</h2>
+                  </a>
+                  <a href="" class="list-group-item list-group-item-action bg-trans text-white">
+                    <h2>CỘNG ĐỒNG</h2>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <!-- END MOBILE -->
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container pt-4 pb-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="link-none" href="index.html">Trang Chủ</a></li>
+                  <li class="breadcrumb-item active text-white" aria-current="page">GAME ONLINE</li>
+                </ol>
+            </nav>
+            <div class="title-category">
+              <div class="d-flex justify-content-between align-items-center">
+                <h1>GAME ONLINE</h1>
+              <div class="dropdown-list">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    MỚI NHẤT
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu">
+                    <li><button class="dropdown-item text-end" type="button">Mới nhất</button></li>
+                    <li><button class="dropdown-item text-end" type="button">Xem nhiều nhất</button></li>
+                    <li><button class="dropdown-item text-end" type="button">Điểm đánh giá cao nhất</button></li>
+                    <li><button class="dropdown-item text-end" type="button">Ngẫu nhiên</button></li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+            <header class="mb-5">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div class="item">
+                    <a class="link-none" href="xePC.html">
+                      <img class="ms-4" src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/fortnite-world-cup-534x462.jpg" alt="">
+                      <div class="content" style="margin-left: 20px;">
+                        <h3 class="me-5 pe-5">Thật không thể tin được khi hơn 1,200 tài khoản hack bị ban tại Fortnite World Cup</h3>
+                        <div class="content-date">
+                          <span class="date me-5">24 Tháng Tư, 2021</span>
+                          <span class="comment">
+                            <i class="far fa-comments fs-5"></i> 12
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row gx-0">
+                    <div class="col-md-12 mb-2">
+                      <div class="item">
+                        <a class="link-none" href="">
+                          <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/cam-visa-thi-dau-pubg-533x261.jpg" alt="" width="545">
+                          <div class="content" style="width: 98%"> 
+                            <h3 class="">Bị Đại sứ quán Anh từ chối Visa, 2 tuyển PUBG Việt Nam đắng lòng phải ngồi ở nhà xem giải qua TV</h3>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="item">
+                        <a class="link-none" href="">
+                          <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/we-game-x-1-265x198.jpg" alt="">
+                          <div class="content" >
+                            <h5 class="">Tencent âm thầm phát hành WeGame bản quốc tế, “thọc hậu” Steam cực “gắt”</h5>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="item">
+                        <a class="link-none" href="">
+                          <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/pubg-update-265x198.jpg" alt="">
+                          <div class="content" style="width: 95%">
+                            <h5 class="">PUBG tiếp tục có cập nhật cực hot trên hai nền tảng PS4 và Xbox One</h5>                         
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="main">
+                <div class="row g-5">
+                    <div class="col-md-8 p-0 ps-5">
+                      <div class="list-item">
+                        <div class="row g-0 overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                          <div class="col-auto d-none d-lg-block">
+                            <img src="http://game8.vn/media/201904/images/trung-phuc-sinh-pubg-mobile-2.jpeg" alt="" width="324" height="235">
+                          </div>
+                          <div class="col p-2 ps-4 pt-0 d-flex flex-column position-static">
+                            <a class="link-none" href="">
+                              <h3 class="mb-3">Đập Trứng Phục Sinh PUBG Mobile 0.12.0 NHẬN ĐỒ MIỄN PHÍ, cơ hội để...</h3>
+                            </a>
+                            <div class="text-muted d-flex justify-content-between mb-2">
+                              <span class="date">31 Tháng Năm, 2021</span>
+                              <span class="view">31,412 Lượt xem</span>
+                              <span class="comments rounded-top text-white">25</span>
+                            </div>
+                            <p class="card-text mb-auto">Tìm những quả trứng Phục sinh đầu tiên trong sự kiện, người chơi sẽ có cơ hội nhận được những món đồ miễn phí thông qua vòng quay. Trừng Phục Sinh - sự kiện cực...</p>
+                          </div>
+                        </div>
+                        <div class="row g-0 overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                          <div class="col-auto d-none d-lg-block">
+                            <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/nu-game-thu-trung-quoc-4-324x235.jpg" alt="" width="324" height="235">
+                          </div>
+                          <div class="col p-2 ps-4 pt-0 d-flex flex-column position-static">
+                            <a class="link-none" href="">
+                              <h3 class="mb-3">Con gái chơi game kiếm được bao nhiều tiền/tháng?</h3>
+                            </a>
+                            <div class="text-muted d-flex justify-content-between mb-2">
+                              <span class="date">19 Tháng Hai, 2021</span>
+                              <span class="view">28k Lượt xem</span>
+                              <span class="comments rounded-top text-white">1k</span>
+                            </div>
+                            <p class="card-text mb-auto">Từ lâu việc chơi game không chỉ dành cho nam giới. Ngày nay, nhiều game mới ra mắt, chị em cũng nhanh chóng bắt nhịp và tham gia mạnh mẽ. Không hiếm những nữ game...</p>
+                          </div>
+                        </div>
+                        <div class="row g-0 overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                          <div class="col-auto d-none d-lg-block">
+                            <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/pubg-mobile-loi-may-bay-2.jpg" alt="" width="324" height="182">
+                          </div>
+                          <div class="col p-2 ps-4 pt-0 d-flex flex-column position-static">
+                            <a class="link-none" href="">
+                              <h3 class="mb-3">PUBG Mobile vừa tung bản Update 0.12.0 đã xuất hiện BUG máy bay biến...</h3>
+                            </a>
+                            <div class="text-muted d-flex justify-content-between mb-2">
+                              <span class="date">24 Tháng Tư, 2021</span>
+                              <span class="view">120k Lượt xem</span>
+                              <span class="comments rounded-top text-white">365</span>
+                            </div>
+                            <p class="card-text mb-auto">PUBG Mobile mới đây đã tung ra một bản cập nhật lớn 0.12.0 cho cả người dùng Android và iOS. Mặc dù bản cập nhật mang đến hàng loạt tính năng mới bao gồm chế độ...</p>
+                          </div>
+                        </div>
+                        <div class="row g-0 overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                          <div class="col-auto d-none d-lg-block">
+                            <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/pubg-mobile-1.jpg" alt="" width="324" height="235">
+                          </div>
+                          <div class="col p-2 ps-4 pt-0 d-flex flex-column position-static">
+                            <a class="link-none" href="">
+                             <h3 class="mb-3">PUBG Mobile: Hướng dẫn đổi nón lá và áo dài hoàn toàn Free</h3>
+                            </a>
+                            <div class="text-muted d-flex justify-content-between mb-2">
+                              <span class="date">18 Tháng Hai, 2021</span>
+                              <span class="view">360,412 Lượt xem</span>
+                              <span class="comments rounded-top text-white">11k</span>
+                            </div>
+                            <p class="card-text mb-auto">Với những game thủ PUBG Mobile chơi với tiêu chí “Nói không với nạp thẻ” thì có lẽ chẳng còn xa lạ gì với Shop Đổi Đồ. Bên cạnh những bộ quần áo cơ...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="position-sticky " style="top: 2rem; bottom: 2rem;">
+                          <div class="title-4 mb-4">
+                            <h4 class="menu-title pt-2">
+                              <span class="fs-5 title fw-bold">KẾT NỐI VỚI CHÚNG TÔI</span>
+                              <div class="divider-title-4">
+                                <div class="divider-title-2"></div>
+                              </div>
+                              <div class="row g-0 mt-4">
+                                <div class="col-4">
+                                  <div class="box box-facebook d-flex justify-content-center align-items-center flex-column p-3">
+                                    <span class="mb-3"><i class="fab fa-facebook-f"></i></span>
+                                    <span>3 Tr</span>
+                                    <span class="info-name">Thành viên</span>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="box box-youtube d-flex justify-content-center align-items-center flex-column p-3">
+                                    <span class="mb-3"><i class="fab fa-youtube"></i></span>
+                                    <span>4,9 Tr</span>
+                                    <span class="info-name">Đăng Kí</span>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="box box-twitter d-flex justify-content-center align-items-center flex-column p-3">
+                                    <span class="mb-3"><i class="fab fa-twitter"></i></span>
+                                    <span>1 Tr</span>
+                                    <span class="info-name">Follow</span>
+                                  </div>
+                                </div>  
+                              </div>
+                            </h4>
+                          </div>
+                          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/tencent-lam-dien-thoai.jpg" width="auto" height="385" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <a class="link-none" href="">
+                                    <h5>Tencent sắp sản xuất riêng điện thoại chơi PUBG Mobile và Vương Giả Vinh Diệu?</h5>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="5000">
+                                <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/apex-legends-giam-luong-nguoi-xem-1-324x400.jpg" width="100%" height="385" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <a class="link-none" href="">
+                                    <h5>Apex Legends: Lượng view stream trong tháng giảm 75%</h5>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="http://mauweb.monamedia.net/game8/wp-content/uploads/2019/04/pubg-mobile-loi-may-bay-2.jpg" width="auto" height="385" alt="">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <a class="link-none" href="">
+                                    <h5>PUBG Mobile vừa tung bản Update 0.12.0 đã xuất hiện BUG máy bay biến mất, game thủ “treo máy” trên không trung</h5>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon border border-white" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                              <span class="carousel-control-next-icon border border-white" aria-hidden="true"></span>
+                              <span class="visually-hidden ">Next</span>
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-mute py-5">
+    <div class="container mt-5">
+        <div class="row g-0">
+        <div class="col-md-3">
+            <div class="logo">
+            <a href="">
+                <img class="img-fluid" src="asset/img/big-logo.PNG" alt="">
+            </a>
+            </div>
+        </div>
+        <div class="col-md-5 ps-5">
+            <h2 class="text-white">VỚI CHÚNG TÔI</h2>
+            <br>
+            <p class="text-white">
+            LapLap-News là website tin tức có tuổi đời vài ngày kinh nghiệm trong ngành. 
+            LapLap-News luôn cập nhật tin tức một cách nhanh chóng kịp thời đáp ứng nhu 
+            cầu tìm hiểu thị trường game và công nghệ. Hãy đến với chúng tôi, LapLap-News
+            cho các bạn thấy sự khác biệt, hiệu quả của chúng tôi với thị trường website 
+            tin tức khác
+            <br>
+            <br>
+            Email liên hệ: quannguyennak@gmail.com
+            </p>
+        </div>
+        <div class="col-md-4 text-white ps-5">
+            <h2 class="text-white">MẠNG XÃ HỘI</h2>
+            <br>
+            <div class="group-item-icon">
+              <a href="" class="btn btn-outline-warning rounded me-2">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="" class="btn btn-outline-warning rounded me-2">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="btn btn-outline-warning rounded me-2">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="" class="btn btn-outline-warning rounded">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <div class="end-footer">
+    <div class="container py-2">
+        <p class="text-white pt-2">Designed by <a href="https://www.facebook.com/shini0101/">Nguyen Thanh Quan</a> with the help of the teacher</p>
+    </div>
+    </div>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
